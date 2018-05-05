@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
+
+@font-face {
+    font-family: Metropolis-bold;
+    src: url(./fonts/Metropolis-SemiBold.otf);
+}
+
+.vertical-align {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+header,
+nav,
+div,
+main,
+section,
+footer {
+    border: 1px solid black;
+}
+
+
+
+/* HEADER SETTINGS */
+
+/* Navigation settings */
+
+nav {
+    height: 100px;
+}
+
+/* Hero settings */
+
+.pg-hero {
+    height: 880px;
+}
+
+/* PROS SETTINGS */
+
+.pg-main-pros {
+    height: 750px;
+}
+
+/* SHOWCASE SETTINGS */
+
+.pg-main-showcase {
+    height: 670px;
+}
+
+/* COLLECTION SETTINGS */
+
+.pg-main-collection {
+    height: 1210px;
+}
+
+/* STAFF SETTINGS */
+
+.pg-main-staff {
+    height: 980px;
+}
+
+/* PROJECTS SETTINGS */
+
+.pg-main-projects {
+    height: 1220px;
+}
+
+/* BLOG SETTINGS */
+
+.pg-main-blog {
+    height: 800px;
+}
+
+/* FOOTER SETTINGS */
+
+footer {
+    height: 440px;
+}
+
