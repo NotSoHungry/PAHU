@@ -1,0 +1,4 @@
+1. Fully support RWD - images, fonts etc
+2. Included basic interactions -> search bar expanding after clicked on search button, some sliders etc
+3. Included on-scroll effects.
+4. As semantic as possible.

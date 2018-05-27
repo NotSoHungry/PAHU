@@ -1,8 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600');
 
 @font-face {
     font-family: Metropolis-bold;
     src: url(./fonts/Metropolis-SemiBold.otf);
+}
+
+
+body {
+    font-family: "Poppins", sans-serif;
 }
 
 .vertical-align {
@@ -14,7 +19,6 @@
 }
 
 header,
-nav,
 div,
 main,
 section,
@@ -30,12 +34,59 @@ footer {
 
 nav {
     height: 100px;
+    background: #181817;
+    text-align: center;
+}
+
+.nav-wrapper {
+    border: solid 1px red;
+    width: 70%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.nav-logo {
+    display: inline-block;
+    margin-right: 100px;
+    border: none;
+    vertical-align: top;
+}
+
+.main-menu-wrapper {
+    display: inline-block;
+    border: none;
+}
+
+.nav-main-menu {
+    font-size: 14px;
+    color: #fefefe;
+    font-weight: 400;
+    list-style-type: none;
+}
+
+.menu-item {
+    display: inline-block;
+    text-transform: uppercase;
+    margin-right: 40px;
+    line-height: 100px;
+}
+
+.menu-item.last {
+    margin-right: 0px;
+}
+
+.nav-additional {
+    display: inline-block;
+    display: none;
 }
 
 /* Hero settings */
 
 .pg-hero {
     height: 880px;
+    background: url(../assets/hero-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* PROS SETTINGS */
