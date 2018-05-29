@@ -83,10 +83,12 @@ nav {
 /* Hero settings */
 
 .pg-hero {
-    height: 880px;
-    background: url(../assets/hero-image.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+}
+
+.pg-hero-overlay {
+    background: #181817;
+    opacity: 1;
+    height: 100%;
 }
 
 /* PROS SETTINGS */
