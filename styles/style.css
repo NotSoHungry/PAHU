@@ -104,16 +104,32 @@ nav {
 }
 
 .pg-hero-images .hero-image.first {
-    background: url(../assets/hero-image.png);
+    background-image: url(../assets/hero-image.png);
 }
 
 .pg-hero-overlay {
-    background: #181817;
-    opacity: .4;
     height: 100%;
     width: 100%;
     position: absolute;
     top: 0;
+}
+
+.overlay-row {
+    height: 14.28571%;
+}
+
+.dark-overlay {
+    background: #181817;
+    opacity: .4;
+}
+
+.white-overlay {
+    background: rgba(255, 255, 255, .2);
+}
+
+.dark-overlay.box,
+.white-overlay.box {
+    height: 100%;
 }
 
 /* PROS SETTINGS */
