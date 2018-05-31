@@ -120,17 +120,71 @@ nav {
 
 .dark-overlay {
     background: #181817;
-    opacity: .4;
+    opacity: .6;
 }
 
 .white-overlay {
-    background: rgba(255, 255, 255, .2);
+    background: #181817;
+    opacity: .2;
 }
 
 .dark-overlay.box,
 .white-overlay.box {
     height: 100%;
 }
+
+.pg-hero-text {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    font-family: "Poppins", sans-serif;
+}
+
+.hero-text-wrapper {
+    height: 30%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-right: 20px;
+    max-width: 70%;
+}
+
+.welcome-element {
+    float: left;
+}
+
+.hero-text-welcome {
+    margin-bottom: 40px;
+}
+
+.text-welcome-box {
+    height: 5px;
+    width: 63px;
+    background: #fece76;
+    vertical-align: top;
+}
+
+.text-welcome-para {
+    font-size: 25px;
+    line-height: 19px;
+    color: #ffff;
+}
+
+.text-welcome-para span {
+    font-weight: 600;
+    color: #fece76;
+}
+
+.hero-text-header {
+    font-size: 60px;
+    color: #ffff;
+    line-height: 70px;
+    text-transform: uppercase;
+}
+
+
 
 /* PROS SETTINGS */
 
