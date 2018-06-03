@@ -82,19 +82,21 @@ nav {
 /* Hero settings */
 
 .pg-hero {
-    height: 880px;
     border: none;
 }
 
 .pg-hero-main {
     width: 100%;
-    height: 100%;
+    height: 0px;
+    padding-top: 55%;
     position: relative;
 }
 
 .pg-hero-images {
     width: 100%;
     height: 100%;
+    position: absolute;
+    top: 0;
 }
 
 .pg-hero-images .hero-image {
@@ -156,23 +158,42 @@ nav {
 }
 
 .hero-text-welcome {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .text-welcome-box {
-    height: 5px;
+    height: 30px;
     width: 63px;
-    background: #fece76;
     vertical-align: top;
+    position: relative;
+    margin-right: 15px;
+}
+
+.text-welcome-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 50%;
+    width: 100%;
+    border-bottom: 2.5px solid #fece76;
+}
+
+.text-welcome-box::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 50%;
+    width: 100%;
+    border-top: 2.5px solid #fece76;
 }
 
 .text-welcome-para {
     font-size: 25px;
-    line-height: 19px;
+    line-height: 30px;
     color: #ffff;
 }
 
-.text-welcome-para span {
+.text-welcome-para .bolder-text {
     font-weight: 600;
     color: #fece76;
 }
@@ -183,6 +204,43 @@ nav {
     line-height: 70px;
     text-transform: uppercase;
 }
+
+.pg-hero-controls {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0 30px 0 30px;
+}
+
+.hero-control-button {
+    background: #626262;
+    opacity: .20;
+    border-radius: 100%;
+    height: 70px;
+    width: 70px;
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.hero-control-button.left {
+    float: left;
+}
+
+.hero-control-button.right {
+    float: right;
+}
+
+.control-button-arrow {
+    margin: 0 auto;
+    background: white;
+    opacity: 1;
+    height: 20px; 
+    width: 20px;
+    transform: rotate(45deg);
+    transform-origin: 50% 50%;
+}
+
+
 
 
 
