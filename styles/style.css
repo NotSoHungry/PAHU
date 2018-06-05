@@ -252,6 +252,7 @@ nav {
     padding-top: 50px;
     font-family: "Poppins", sans-serif;
     text-align: center;
+    letter-spacing: 4px;
 }
 
 .pros-header {
@@ -260,6 +261,29 @@ nav {
     text-transform: uppercase;
     font-weight: 600;
     line-height: 45px;
+    margin-bottom: 20px;
+}
+
+.pros-header-underscore {
+    width: 30%;
+    height: 40px;
+    border: solid 1px red;
+    margin: 0 auto;
+}
+
+.pros-header-underscore hr,
+.header-underscore-star {
+    float: left;
+}
+
+.pros-header-underscore hr {
+    width: 45%;
+}
+
+.header-underscore-star {
+    width: 10%;
+    height: 20px;
+    border: solid 1px blue;
 }
 
 /* SHOWCASE SETTINGS */
