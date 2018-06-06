@@ -261,13 +261,11 @@ nav {
     text-transform: uppercase;
     font-weight: 600;
     line-height: 45px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .pros-header-underscore {
     width: 30%;
-    height: 40px;
-    border: solid 1px red;
     margin: 0 auto;
 }
 
@@ -277,13 +275,29 @@ nav {
 }
 
 .pros-header-underscore hr {
-    width: 45%;
+    width: 46%;
+    margin: 5px 0;
+    background: #181817;
+    border-top: 1px solid rgba(255, 255, 255, .3);
 }
 
 .header-underscore-star {
-    width: 10%;
-    height: 20px;
-    border: solid 1px blue;
+    width: 8%;
+    position: relative;
+    height: 10px;
+}
+
+.header-underscore-star::after {
+    content: '';
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    transform: rotate(45deg);
+    background: #ffce76;
 }
 
 /* SHOWCASE SETTINGS */
