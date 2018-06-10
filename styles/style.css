@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,600');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,600');
 
 @font-face {
     font-family: Metropolis-bold;
@@ -246,13 +246,13 @@ nav {
 /* PROS SETTINGS */
 
 .pg-main-pros {
-    height: 750px;
     background: #181817;
     border: none;
     padding-top: 50px;
     font-family: "Poppins", sans-serif;
     text-align: center;
     letter-spacing: 4px;
+    padding-bottom: 100px;
 }
 
 .pros-header {
@@ -300,10 +300,147 @@ nav {
     background: #ffce76;
 }
 
+.pros-list {
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 80%;
+    position: relative;
+}
+
+.pros-product-image {
+    max-width: 35%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pros-product-image img {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    bottom: 30px;
+
+}
+
+.pros-list-description {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.description-group {
+    height: 100%;
+    width: 32.5%;
+}
+
+.description-group.first {
+    float: left;
+}
+
+.description-group.second {
+    float: right;
+}
+
+.description-element {
+    height: 50%;
+    color: white;
+    width: 100%;
+    position: relative;
+}
+
+.description-element-icon {
+    width: 20%;
+    position: absolute;
+    top: 0;
+    text-align: center;
+}
+
+.description-element-icon.design,
+.description-element-icon.quality {
+    right: 0;
+}
+
+.description-element-icon.prices,
+.description-element-icon.support {
+    left: 0;
+}
+
+.description-element-icon img {
+    max-width: 100%;
+}
+
+.description-element-text {
+    position: absolute;
+    top: 0;
+    width: 80%;
+}
+
+.description-element-text.design,
+.description-element-text.quality {
+    left: 0;
+    text-align: right;
+}
+
+.description-element-text.prices,
+.description-element-text.support {
+    right: 0;
+    text-align: left;
+}
+
+.description-element-text h2 {
+    text-transform: uppercase;
+    color: #ffce76;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.description-element-text p {
+    padding-top: 20px;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: .14px;
+    line-height: 21px;
+}
+
+.description-element-text.design,
+.description-element-text.quality {
+    padding-left: 10%;
+    padding-right: 15px;
+}
+
+.description-element-text.prices,
+.description-element-text.support {
+    padding-right: 10%;
+    padding-left: 15px;
+}
+
+/* above 1700px */ 
+
+@media only screen and (min-width: 1700px) {
+    
+    .description-group.first {
+        position: relative;
+        right: -3%;
+    }
+
+    .description-group.second {
+        position: relative;
+        left: -3%;
+    }
+}
+
 /* SHOWCASE SETTINGS */
 
 .pg-main-showcase {
-    height: 670px;
+    width: 100%;
+}
+
+.pg-main-showcase-wrapper {
+    width: 100%;
+    height: 0;
+    padding-top: 41.84%;
 }
 
 /* COLLECTION SETTINGS */
