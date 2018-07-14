@@ -443,68 +443,37 @@ nav {
 
 .pg-main-showcase {
     width: 100%;
-    border: none;
+    height: 670px;
+    border: solid 1px b lack;
     position: relative;
 }
 
 .showcase-element {
+    border: solid 1px red;
     float: left;
-    position: relative;
 }
 
 .showcase-element.main {
-    width: 25%;
-    max-height: 670px;
-    overflow: hidden;
-}
-
-.showcase-element-filler {
-    width: 100%;
-    height: 0;
-    padding-top: 169%;
-}
-
-.showcase-element.main img {
-    position: absolute;
+    width: 20%;
     height: 100%;
-    width: 100%;
-    top: 0;
-
-}
-
-.showcase-elements-grouped {
-    width: 75%;
-    float: left;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-}
-
-.showcase-elements-grouped .showcase-element {
-    height: 50%;
-}
-
-.showcase-elements-grouped .showcase-element img {
-    width: 100%;
-    height: 100%;
-}
-
-.showcase-element.medium {
-    width: 75%;
 }
 
 .showcase-element.small {
-    width: 25%;
+    width: 20%;
+    height: 50%;
 }
+
+.showcase-element.medium {
+    width: 60%;
+    height: 50%;
+}
+
 
 /* Showcase figcaption settings */
 
 .showcase-element-text {
     position: absolute;
     top: 0;
-    border: solid 1px red;
     width: 100%;
     height: 100%;
     padding-left: 5%;
