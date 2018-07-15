@@ -443,29 +443,135 @@ nav {
 
 .pg-main-showcase {
     width: 100%;
-    height: 670px;
-    border: solid 1px b lack;
+    padding-bottom: 42%;
+    border: solid 1px black;
     position: relative;
+}
+
+.showcase-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+
 }
 
 .showcase-element {
     border: solid 1px red;
     float: left;
+    position: relative;
 }
 
-.showcase-element.main {
-    width: 20%;
+.showcase-element img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
     height: 100%;
 }
 
+.showcase-element.main {
+    width: 25%;
+    height: 100%;
+    background: #E5E7E6;
+}
+
 .showcase-element.small {
-    width: 20%;
+    width: 25%;
     height: 50%;
 }
 
+.showcase-element.small.first {
+    background: #E5E7E6;
+}
+
+.showcase-element.small.second {
+    background: #FAFAFA;
+}
+
 .showcase-element.medium {
-    width: 60%;
+    width: 50%;
     height: 50%;
+}
+
+.showcase-element.medium.first {
+    background-color: #e9eef1;
+    background-image: url("../assets/showcase-sofa.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    position: relative;
+}
+
+.showcase-element.medium.first::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/showcase-sofa.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    position: relative;
+}
+
+.showcase-element.medium.second {
+    background: #f1f1f1;
+}
+
+/* Under 1200px */
+
+@media only screen and (max-width: 1200px) {
+    
+    .pg-main-showcase {
+        padding-bottom: 60%;
+    }
+
+    .showcase-element.main {
+        width: 40%;
+    }
+
+    .showcase-element.small {
+        width: 60%;
+        height: 25%;
+    }
+
+    .showcase-element.medium {
+        width: 60%;
+        height: 25%;
+    }
+}
+
+/* Under 1000px */
+
+@media only screen and (max-width: 1000px) {
+
+    .pg-main-showcase {
+        padding-bottom: 70%;
+    }
+}
+
+/* Under 900px */
+
+@media only screen and (max-width: 900px) {
+
+    .pg-main-showcase {
+        padding-bottom: 60%;
+    }
+
+    .showcase-element.main {
+        width: 40%;
+    }
+
+    .showcase-element.medium {
+        width: 60%;
+        height: 50%;
+    }
+
+    .showcase-element.small {
+        display: none;
+    }
 }
 
 
